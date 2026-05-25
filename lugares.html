@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PAQUETES DE VIAJE</title>
+  <link rel="stylesheet" href="estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+  <div class="encabezado-superior">
+    <img src="imagenes/logo.jpg.png" alt="Logo Turismo Guatemala" class="logo">
+    <h1>PAQUETES DE VIAJE</h1>
+    <div class="frase-turismo">
+      <p>“Cada rincón de Guatemala tiene una historia que contar”</p>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tecnologia.html">Tecnología</a></li>
+      <li><a href="tipos.html">Tipos de Turismo</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <div class="contenido">
+    <img src="imagenes/foto 8.jpg" alt="Antigua Guatemala">
+     <div class="texto">
+      <h2>RELAX Y BIENESTAR</h2>
+      <p>Desconecta y recarga energías en Antigua Guatemala. Incluye alojamiento en un resort con spa, sesiones de masajes, clases de yoga y gastronomía tipica. Además de recorridos a la plaza central y museos.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="contenido">
+    <img src="imagenes/foto 3.jpg" alt="Lago de Atitlán">
+    <div class="texto">
+      <h2>Aventura Extrema</h2>
+<p>Para los más temerarios y amantes de la adrenalina, disfruta en el lago de Atitlán de deportes de aventura en lanchas, nado, y vuelos en parapente. Incluye alojamiento en alojamientos rústicos y transportes especializados para una experiencia extrema.</p>
+
+<p>Además de su belleza natural, Atitlán es un punto clave para el ecoturismo y el turismo comunitario, ideal para quienes desean tener una experiencia inmersiva con las culturas mayas vivas.</p>
+
+<p>Puedes disfrutar de actividades acuáticas como kayak, paddleboard, natación o paseos en lancha entre los pueblos del lago.</p>
+
+<p>Existen senderos ecológicos para caminatas con vista panorámica, como el mirador "Nariz del Indio", famoso por sus amaneceres.</p>
+
+<p>Los volcanes que rodean el lago son perfectos para excursionismo y campamentos.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="contenido">
+    <img src="imagenes/foto 13.jpg" alt="Ruinas de Tikal">
+    <div class="texto">
+      <h2>AVENTURA</h2>
+      <p>Disfruta del Parque Nacional Tikal, disfruta de tours guiados a través de las estructuras junto a actividades recreativas al aire libre, rutas de senderismo y paseo en bicicleta además de disfrutar el amanecer y atardecer junto a los templos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="otros-destinos">
+  <h2>También te puede interesar</h2>
+  <div class="tarjetas-interes">
+    <div class="tarjeta">
+      <img src="imagenes/semuc champey.png" alt="Semuc Champey">
+      <p>Semuc Champey</p>
+    </div>
+    <div class="tarjeta">
+      <img src="imagenes/iglesia.png" alt="Chichicastenango">
+      <p>Chichicastenango</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 style="text-align:center;">Ubicación de los Lugares Más Visitados</h2>
+  <div style="text-align:center; margin-bottom: 40px;">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=10vLr3m_M1CY86P5dCxdg0iq3eDVu9ZQ&ehbc=2E312F" width="90%" height="480" style="border:0; border-radius: 12px;"></iframe>
+  </div>
+</section>
+
+<section class="testimonios">
+  <h2>¿Qué dicen los turistas?</h2>
+  <div class="testimonio">
+    <p>“Visitar Antigua fue como viajar al pasado, pero con todo el confort moderno. ¡Recomendado 100%!” – <strong>Laura M.</strong>, España</p>
+  </div>
+  <div class="testimonio">
+    <p>“El Lago Atitlán es simplemente mágico. Me hospedé en San Juan y fue una experiencia inolvidable.” – <strong>Carlos R.</strong>, México</p>
+  </div>
+</section>
+
+
+<footer class="credito-final">
+  <p>&copy; 2025 Turismo en Guatemala | Inspirado por INGUAT</p>
+</footer>
+<button id="btn-subir" title="Subir arriba">&#8679;</button>
+<script>
+  const btnSubir = document.getElementById("btn-subir");
+
+  // Mostrar botón al hacer scroll
+  window.onscroll = function () {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      btnSubir.style.display = "block";
+    } else {
+      btnSubir.style.display = "none";
+    }
+  };
+
+  // Scroll suave hacia arriba
+  btnSubir.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+
+</body>
+</html>
+

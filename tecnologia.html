@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tecnología en el Turismo</title>
+  <link rel="stylesheet" href="estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+  <div class="encabezado-superior">
+    <img src="imagenes/logo.jpg.png" alt="Logo Turismo Guatemala" class="logo">
+    <h1>Tecnología en el Turismo</h1>
+    <div class="frase-turismo">
+      <p>“Turismo moderno, experiencias inolvidables”</p>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="lugares.html">Lugares Más Visitados</a></li>
+      <li><a href="tipos.html">Tipos de Turismo</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <div class="contenido">
+    <img src="imagenes/foto tecno turismo.jpg" alt="Tecnología en el turismo">
+    <div class="texto">
+      <h2>Innovación y Turismo en Guatemala</h2>
+      <p>La tecnología ha revolucionado la forma en que los turistas interactúan con los destinos. En Guatemala, plataformas como las del INGUAT han permitido a los visitantes acceder a mapas digitales, reservar hoteles, explorar sitios con realidad aumentada y recibir asistencia virtual.</p>
+      <p>Gracias a estas herramientas, la experiencia de viaje es más segura, personalizada y eficiente, fortaleciendo así la imagen del país como un destino moderno e inclusivo.</p>
+      
+<p>Gracias a estas herramientas, la experiencia de viaje es más segura, personalizada y eficiente, fortaleciendo así la imagen del país como un destino moderno e inclusivo. Los visitantes pueden planificar su recorrido con antelación, descubrir rutas menos conocidas y conectar directamente con servicios turísticos certificados.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="contenido">
+    <img src="imagenes\foto turismo.jpg" alt="Aplicaciones móviles">
+    <div class="texto">
+      <h2>Aplicaciones y Realidad Aumentada</h2>
+      <p>Aplicaciones móviles permiten reservar tours, obtener traducciones instantáneas y conocer detalles culturales desde el celular. Además, guías turísticas virtuales integran inteligencia artificial para ofrecer rutas interactivas y recomendaciones personalizadas.</p>
+      <p>Todo esto ayuda a los turistas extranjeros a conocer Guatemala con mayor profundidad y comodidad.</p>
+    </div>
+  </div>
+</section>
+
+<section class="estadisticas-turismo">
+  <p>Comparación del número de visitantes en los últimos años:</p>
+  <canvas id="graficoTurismo" class="grafico-pequeno"></canvas>
+</section>
+
+<div class="video-fijo">
+  <iframe src="https://www.youtube.com/embed/RoQTqMyi89g" allowfullscreen></iframe>
+</div>
+
+<footer class="credito-final">
+  <p>&copy; 2025 Turismo en Guatemala | Inspirado por INGUAT</p>
+</footer>
+<button id="btn-subir" title="Subir arriba">&#8679;</button>
+<script>
+  const btnSubir = document.getElementById("btn-subir");
+
+  // Mostrar botón al hacer scroll
+  window.onscroll = function () {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      btnSubir.style.display = "block";
+    } else {
+      btnSubir.style.display = "none";
+    }
+  };
+
+  // Scroll suave hacia arriba
+  btnSubir.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('graficoTurismo').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
+      datasets: [{
+        label: 'Visitantes internacionales (millones)',
+        data: [2.4, 2.6, 1.1, 1.5, 2.0, 2.8],
+        backgroundColor: '#007BFF'
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SENDEROS CHAPINES</title>
+  <link rel="stylesheet" href="estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="social-float">
+    <a href="https://www.facebook.com/inguatoficial" target="_blank" title="Facebook INGUAT">
+      <img src="imagenes/facebook.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/inguatoficial?igsh=MTVkb3gxNWR1aDBhdQ==" target="_blank" title="Instagram INGUAT">
+      <img src="imagenes/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://x.com/InguatPrensa?t=ZmftBN-IQ_9A4PfMtldeyg&s=08" target="_blank" title="Twitter INGUAT">
+      <img src="imagenes/twitter.png" alt="Twitter">
+    </a>
+  </div>
+
+  <header>
+    <div class="encabezado-superior">
+      <img src="imagenes/logo.jpg.png" alt="Logo Turismo Guatemala" class="logo">
+      <h1>SENDEROS CHAPINES</h1>
+      <div class="frase-turismo">
+        <p>“Guatemala, corazón del mundo maya”</p>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="tecnologia.html">Tecnología</a></li>
+        <li><a href="lugares.html">Paquetes de Viaje</a></li>
+        <li><a href="tipos.html">Tipos de Turismo</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="contenido">
+      <img src="imagenes/guate.jpg" alt="Paisaje de Guatemala">
+      <div class="texto">
+        <h2>Bienvenidos al Portal Turístico de Guatemala</h2>
+        <p>Guatemala es un destino vibrante lleno de cultura, historia, naturaleza y aventura. Desde las impresionantes ruinas mayas de Tikal hasta los majestuosos paisajes del Lago de Atitlán, encontrarás un destino turístico que te fascinará.</p>
+        <p>Este sitio web busca ser tu guía para explorar los rincones más fascinantes del país, conocer cómo la tecnología ha mejorado la experiencia del visitante, descubrir los destinos más visitados y aprender sobre las múltiples formas de hacer turismo en Guatemala.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="contenido">
+      <img src="imagenes/foto 14.jpg" alt="Cultura Guatemalteca">
+      <div class="texto">
+        <h2>Riqueza Cultural</h2>
+        <p>Guatemala es uno de los países con mayor diversidad cultural de América Latina. Cuenta con más de 20 grupos étnicos indígenas, entre ellos los mayas k’iche’, q’eqchi’, kaqchikel, tz’utujil, mam, poqomchi’, entre otros. Cada uno mantiene lenguas, vestimenta, danzas, costumbres y creencias ancestrales que se han transmitido de generación en generación.</p>
+        <p>La identidad cultural del país se refleja en:</p>
+        <p><strong>Trajes típicos:</strong> Cada pueblo tiene su propio huipil, con colores, formas y símbolos que cuentan historias y reflejan la cosmovisión maya. Los mercados como los de Chichicastenango y Nebaj son vitrinas vivas de esta tradición textil.</p>
+        <p><strong>Artesanías y mercados:</strong> Guatemala es reconocida por sus tejidos, cerámica, máscaras talladas, joyería de jade, velas rituales y productos naturales hechos a mano.</p>
+        <p><strong>Danzas tradicionales:</strong> Como la danza del venado, la conquista o los moros y cristianos, se representan en festividades locales y tienen un profundo significado religioso y cultural.</p>        
+      </div>
+    </div>
+  </section>
+
+  <div class="banner-contacto">
+    <p><strong>Instituto Guatemalteco de Turismo - INGUAT</strong></p>
+    <p>Dirección: 7a. Avenida 1-17, Zona 4, Ciudad de Guatemala</p>
+    <p>Teléfonos: (502) 2290-2800 | Correo: info@inguat.gob.gt</p>
+    <p>Sitio web oficial: <a href="https://www.inguat.gob.gt" target="_blank">www.inguat.gob.gt</a></p>
+  </div>
+
+<footer class="credito-final">
+  <p>&copy; 2025 Turismo en Guatemala | Inspirado por INGUAT</p>
+</footer>
+
+  <!-- BOTÓN SUBIR -->
+  <button id="btn-subir" title="Subir arriba">&#8679;</button>
+
+  <script>
+    const btnSubir = document.getElementById("btn-subir");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        btnSubir.style.display = "block";
+      } else {
+        btnSubir.style.display = "none";
+      }
+    };
+
+    btnSubir.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+</body>
+</html>

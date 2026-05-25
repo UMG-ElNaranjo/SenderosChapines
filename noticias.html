@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Noticias de Turismo</title>
+  <link rel="stylesheet" href="estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+  <div class="encabezado-superior">
+    <img src="imagenes/logo.jpg.png" alt="Logo Turismo Guatemala" class="logo">
+    <h1>Noticias de Turismo</h1>
+    <div class="frase-turismo">
+      <p>“Mantente informado sobre el turismo en Guatemala”</p>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tecnologia.html">Tecnología</a></li>
+      <li><a href="lugares.html">Lugares Más Visitados</a></li>
+      <li><a href="tipos.html">Tipos de Turismo</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <div class="contenido">
+    <img src="imagenes/foto 15.jpg" alt="Feria de turismo en Guatemala">
+    <div class="texto">
+      <h2>Guatemala Participa en Feria Internacional de Turismo 2025</h2>
+      <p>Guatemala fue uno de los países destacados en la última edición de la FITUR en Madrid, donde presentó su riqueza cultural y natural a más de 250 mil asistentes internacionales.</p>
+      <p>El stand guatemalteco incluyó demostraciones artesanales en vivo, gastronomía y una experiencia inmersiva con realidad virtual.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="contenido">
+    <img src="imagenes/app.jpg" alt="Nueva App INGUAT">
+    <div class="texto">
+      <h2>Nuevo Lanzamiento: App Oficial de INGUAT</h2>
+      <p>El Instituto Guatemalteco de Turismo (INGUAT) ha lanzado recientemente una innovadora aplicación móvil diseñada para transformar la forma en que los visitantes nacionales e internacionales descubren Guatemala. Esta herramienta digital busca facilitar la planificación de viajes y ofrecer una experiencia turística más segura, accesible y personalizada.</p>
+
+<p>Entre sus principales funciones se incluyen:</p>
+
+<p> Mapas interactivos de destinos turísticos, con rutas seguras, servicios cercanos, horarios y recomendaciones en tiempo real.</p>
+
+<p> Itinerarios personalizados, donde el usuario puede crear su ruta de viaje en función de sus intereses: naturaleza, cultura, gastronomía, aventura o relajación.</p>
+
+<p> Guías virtuales de museos, sitios arqueológicos y reservas naturales que utilizan realidad aumentada y audios explicativos en español, inglés y otros idiomas.</p>
+
+    </div>
+  </div>
+</section>
+
+<div class="video-fijo">
+  <iframe src="https://www.youtube.com/embed/KIuXuPI0Ux0" allowfullscreen></iframe>
+</div>
+<div class="noticias-extra">
+  <h2>Más Noticias y Enlaces de Interés</h2>
+  <div class="grid-noticias">
+    <a href="https://inguat.gob.gt/es/prensa/noticias-recientes.html" target="_blank" class="noticia-card">
+      <img src="imagenes/logo inguat.png" alt="Noticias INGUAT">
+      <p>Noticias INGUAT</p>
+    </a>
+
+    <a href="https://inguat.gob.gt/es/documentos/guia-de-inversion-turistica.html" target="_blank" class="noticia-card">
+      <img src="imagenes/turismoo.png" alt="Guía de Inversión Turística">
+      <p>Guía de Inversión Turística</p>
+    </a>
+
+    <a href="https://www.elperiodico.com/es/lugares/guatemala-30760" target="_blank" class="noticia-card">
+      <img src="imagenes/prensa.png" alt="El Periódico">
+      <p>Turismo - El Periódico</p>
+    </a>
+
+    <a href="https://guatemala.com/turismo/" target="_blank" class="noticia-card">
+      <img src="imagenes/guateeee.png" alt="Guatemala.com">
+      <p>Guatemala.com Turismo</p>
+    </a>
+  </div>
+</section>
+
+
+<footer class="credito-final">
+  <p>&copy; 2025 Turismo en Guatemala | Inspirado por INGUAT</p>
+</footer>
+<button id="btn-subir" title="Subir arriba">&#8679;</button>
+<script>
+  const btnSubir = document.getElementById("btn-subir");
+  // Mostrar botón al hacer scroll
+  window.onscroll = function () {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      btnSubir.style.display = "block";
+    } else {
+      btnSubir.style.display = "none";
+    }
+  };
+
+  // Scroll suave hacia arriba
+  btnSubir.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>
+

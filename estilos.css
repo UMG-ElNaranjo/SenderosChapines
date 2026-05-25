@@ -1,0 +1,431 @@
+/* Tipografía general */
+body {
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #fff8dc, #ffffff);
+  color: #003366;
+}
+
+/* Encabezado */
+header {
+  background-color: #007BFF;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding-bottom: 1em;
+}
+
+/* Encabezado superior */
+.encabezado-superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  text-align: center;
+}
+
+.encabezado-superior h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.9em;
+  margin: 0.3em 0;
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+/* Frase turística */
+.frase-turismo {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #e0f0ff;
+  max-width: 200px;
+  text-align: right;
+}
+
+/* Menú de navegación */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+  background-color: black;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  height: auto;
+  max-height: 80px;
+  width: auto;
+  max-width: 100%;
+  background-color: white;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+/* Secciones principales */
+section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Contenido imagen + texto */
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.contenido img {
+  width: 45%;
+  min-width: 280px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.texto {
+  width: 50%;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+/* Botón flotante redes sociales */
+.social-float {
+  position: fixed;
+  bottom: 150px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.social-float a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+  background-color: #007BFF;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.social-float a img:hover {
+  transform: scale(1.15);
+}
+
+/* Banner inferior de contacto */
+.banner-contacto {
+  background-color: #cce5ff;
+  color: #003366;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+  margin-top: 40px;
+  border-top: 3px solid #007BFF;
+}
+
+.banner-contacto a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner-contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Sección de noticias */
+.noticias-extra {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #b0c9e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.noticias-extra h2 {
+  color: #002244;
+  margin-bottom: 25px;
+}
+
+.grid-noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.noticia-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.noticia-card:hover {
+  transform: scale(1.03);
+}
+
+.noticia-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.noticia-card p {
+  color: #003366;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Sección testimonios */
+.testimonios {
+  background-color: #f5f9fc;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.testimonio {
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #003366;
+}
+
+/* Video */
+.video-fijo {
+  aspect-ratio: 16 / 9;
+  width: 95%;
+  max-width: 1000px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.video-fijo iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Tarjetas de destinos */
+.otros-destinos {
+  text-align: center;
+  padding: 30px;
+}
+
+.grid-destinos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.destino-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.destino-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.destino-card p {
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  color: #002244;
+}
+
+/* Botón subir */
+#btn-subir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#btn-subir:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Estadísticas */
+.estadisticas-turismo {
+  background-color: #f0f8ff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 750px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.grafico-pequeno {
+  max-width: 600px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Tarjetas de interés */
+.tarjetas-interes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tarjeta {
+  flex: 1 1 300px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ccc;
+}
+
+.tarjeta h3,
+.tarjeta p {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Redes sociales en móviles */
+.redes-sociales {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  .redes-sociales {
+    transform: scale(0.8);
+    right: 5px;
+    bottom: 5px;
+    opacity: 0.7;
+  }
+
+  .encabezado-superior h1 {
+    font-size: 1.3rem;
+  }
+
+  .frase-turismo {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive general */
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenido img,
+  .texto {
+    width: 90%;
+  }
+
+  .texto {
+    text-align: justify;
+  }
+
+  .video-fijo iframe {
+    height: 250px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .logo {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+.credito-final {
+  text-align: center;
+  font-size: 0.85em;
+  color: #555;
+  margin: 20px 0;
+  padding-bottom: 10px;
+}
+
